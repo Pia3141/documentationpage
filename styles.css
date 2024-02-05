@@ -63,6 +63,12 @@ nav li {
 nav a {
   color: #008f8c;
 }
+
+.larger {
+  font-size: 20px;
+  padding: 0;
+  margin-bottom: -5px;
+}
 @media (max-width: 680px) {
   #main-doc {
     font-size: 10px;

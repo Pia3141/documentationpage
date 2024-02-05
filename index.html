@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Technical Documentation Page</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
     <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   </head>
@@ -18,7 +18,7 @@
         <ul>
           <li><a class="nav-link" href="#introduction">Introduction</a></li>
           <li><a class="nav-link" href="#syntax">Syntax</a></li>
-          <li><a class="nav-link" href="#integration">Integrations</a></li>
+          <li><a class="nav-link" href="#integration">Integration</a></li>
           <li><a class="nav-link" href="#selectors">Selectors</a></li>
           <li><a class="nav-link" href="#comments">Comments</a></li>
         </ul>
@@ -61,7 +61,7 @@
           </p>
           <ul>
             <li><div>
-              <h3>Inline CSS</h3>
+              <p class="larger">Inline CSS</p>
               <p>Add CSS in our HTML document itself, using the style tag in the
               head of our HTML file. Example:</p>
               <div class="code-box"><code
@@ -73,12 +73,12 @@
            
               <p>Note: This is not a common practice, as it clutters your HTML document and is overal rather impractical.</p></div>
             </li>
-            <li><div><h3>External CSS</h3><p>Add the styles in a sepperate document and link it to your HTML document in the head. This allows not only for an organized collection of styles, but also enables you to link one CSS file to several HTML files to keep a consistant style between pages.</p><div class="code-box"><code>&lt;link rel="stylesheet" href="styles.css"/ &gt;</code></</div></li>
+            <li><div><p class="larger">External CSS</p><p>Add the styles in a sepperate document and link it to your HTML document in the head. This allows not only for an organized collection of styles, but also enables you to link one CSS file to several HTML files to keep a consistant style between pages.</p><div class="code-box"><code>&lt;link rel="stylesheet" href="styles.css"/ &gt;</code></</div></li>
           </ul>
         </div>
       </section>
       <section class="main-section" id="selectors">
-        <header>Selectors</header><div><p>In the example above, you can see, that tags can be used to select elements from the HTML document. These are not restricted to the visible tags of text-declarations (such as h1, p, em, ...), but also include structural tags such as main, nav, body and even the html tag itself.</p><p>What if you only want to change the style of one or several objects of a type? This is where the class and ids you assigned to elements in your HTML file come in handy. You can target classes by adding a . in front of their name. You can target an element with its id, by putting a # infront of it.</p><p>To select every element on the page, you can use the * selector.</p>
+        <header>Selectors</header><div><p>In the example above, you can see, that tags can be used to select elements from the HTML document. These are not restricted to the visible tags of text-declarations (such as h1, p, em, ...), but also include structural tags such as main, nav, body and even the html tag itself.</p><p>What if you only want to change the style of one or several objects of a type? This is where the class and ids you assigned to elements in your HTML file come in handy. <ul><li>You can target an element with its id, by putting a # infront of it.</li><li>You can target classes by adding a . in front of their name. </li><li>To select every element on the page, you can use the * selector.</li></ul>
         <p>Example</p><div class="code-box"><pre><code>
           * {
             font-size: 20px;
