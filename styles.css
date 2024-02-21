@@ -69,18 +69,19 @@ nav a {
   padding: 0;
   margin-bottom: -5px;
 }
-@media (max-width: 680px) {
+@media (max-width: 800px) {
   #main-doc {
     font-size: 10px;
+    min-width: 80vh;
   }
 
   nav {
     max-width: 20vh;
   }
   nav li {
-    font-size: 20px;
+    font-size: 15px;
   }
   nav header {
-    font-size: 20px;
+    font-size: 15px;
   }
 }
