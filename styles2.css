@@ -1,0 +1,86 @@
+/*Color palette by visme:
+#61892f
+#86c232
+#222629
+#474b4f
+#6b6e70
+*/
+body {
+  box-sizing: border-box;
+  margin: 0;
+  background-color: #222629;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+}
+header {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+nav header {
+  color: #86c232;
+  font-size: 1.7rem;
+  padding-left: 5px;
+}
+
+main header {
+  color: #61892f;
+  font-size: 1.5rem;
+}
+
+nav {
+  height: 100%;
+  width: 190px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: 1;
+  padding-top: 10px;
+  border-right: 0.5px solid #474b4f;
+}
+nav ul {
+  padding: 0;
+}
+nav li {
+  text-decoration: none;
+  padding: 5px 10px 5px 10px;
+  font-size: 1.5rem;
+
+  display: block;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+nav a:hover {
+  color: #6b6e70;
+}
+
+main {
+  margin-left: 190px;
+  padding: 20px;
+}
+.larger {
+  font-size: 1.2rem;
+}
+.code-box {
+  border-radius: 5px;
+  width: 80%;
+  margin: 0 auto;
+  padding: 5px;
+  background-color: #61892f;
+}
+
+code {
+  font-family: monospace;
+}
+
+@media (max-width: 500px) {
+  nav {
+    display: none;
+  }
+  main {
+    margin-left: 0;
+  }
+}

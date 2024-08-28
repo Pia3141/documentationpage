@@ -4,15 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Technical Documentation Page</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles2.css">
   </head>
   <body>
-    <div class="container-fluid">
-    <main id="main-doc">
-      <div class="row">
-        <div class="col-4">
+    
+      
+      
       <nav id="navbar">
         <header>CSS Documentation</header>
         <ul>
@@ -22,13 +19,16 @@
           <li><a class="nav-link" href="#selectors">Selectors</a></li>
           <li><a class="nav-link" href="#comments">Comments</a></li>
         </ul>
-      </nav></div><div class="col-8">
+      </nav>
+
+   
+      <main>
       <section class="main-section" id="introduction">
         <header>Introduction</header>
         <div>
           <p>
             CSS stands for 'Cascadian Style Sheets'. Similar to HTML, CSS is not
-            a programming, but rather a stylesheet language. CSS describes how a
+            a programming, but rather a stylesheet language. CSS describes how an
             HTML webpage is displayed.
           </p>
         </div>
@@ -40,15 +40,14 @@
             CSS takes elements of the HTML page and assigns attributes, such as
             colors, borders and even animations. The syntax used is:
           </p>
-        <div class="code-box"><pre><code>
-        selector { 
+        <div class="code-box"><pre><code>        selector { 
           attribute1: value1;
           attribute2: value2;}</code></pre></div>
 
           <p>
             There can be more than one attribute assigned to an element. The
             attributes and their values are seperated with a colon (:). Several
-            attributes are seperated by a semicolon (;) inside the bracket.
+            attributes are seperated by a semicolon (;) inside braces ({}).
           </p>
         </div>
       </section>
@@ -56,14 +55,14 @@
         <header>Integration</header>
         <div>
           <p>
-            How do we tell the Browser what styles to use on an HTML document
-            tho? We can use either:
+            How do we tell the Browser what stylesheet to use on a specific HTML document
+          ? 
           </p>
           <ul>
             <li><div>
               <p class="larger">Inline CSS</p>
-              <p>Add CSS in our HTML document itself, using the style tag in the
-              head of our HTML file. Example:</p>
+              <p>We can add CSS in our HTML document itself, using the style tag in the
+              head of our HTML file. <br/>Example:</p>
               <div class="code-box"><code
                 >&lt;style&gt;
                   h1 {
@@ -73,13 +72,13 @@
            
               <p>Note: This is not a common practice, as it clutters your HTML document and is overal rather impractical.</p></div>
             </li>
-            <li><div><p class="larger">External CSS</p><p>Add the styles in a sepperate document and link it to your HTML document in the head. This allows not only for an organized collection of styles, but also enables you to link one CSS file to several HTML files to keep a consistant style between pages.</p><div class="code-box"><code>&lt;link rel="stylesheet" href="styles.css"/ &gt;</code></</div></li>
+            <li><div><p class="larger">External CSS</p><p>We can add the styles in a sepperate document and link it to our HTML documents in the head. This allows not only for an organized collection of styles, but also enables you to link one CSS file to several HTML files to keep a consistant style between pages.</p><div class="code-box"><code>&lt;link rel="stylesheet" href="styles.css"/ &gt;</code></</div></li>
           </ul>
         </div>
       </section>
       <section class="main-section" id="selectors">
-        <header>Selectors</header><div><p>In the example above, you can see, that tags can be used to select elements from the HTML document. These are not restricted to the visible tags of text-declarations (such as h1, p, em, ...), but also include structural tags such as main, nav, body and even the html tag itself.</p><p>What if you only want to change the style of one or several objects of a type? This is where the class and ids you assigned to elements in your HTML file come in handy. <ul><li>You can target an element with its id, by putting a # infront of it.</li><li>You can target classes by adding a . in front of their name. </li><li>To select every element on the page, you can use the * selector.</li></ul>
-        <p>Example</p><div class="code-box"><pre><code>
+        <header>Selectors</header><div><p>In the example above you can see that tags can be used to select elements from the HTML document. These are not restricted to the visible tags of text-declarations (such as h1, p, em, ...), but also include structural tags such as main, nav, body and even the html tag itself.</p><p>What if you only want to change the style of one or several objects of a type? This is where the class and ids you assigned to elements in your HTML file come in handy. <ul><li>You can target an element with its id, by putting a # infront of it.</li><li>You can target classes by adding a . in front of their name. </li><li>To select every element on the page, you can use the * selector.</li></ul>
+        <p>Example:</p><pre><div class="code-box"><code>          
           * {
             font-size: 20px;
           }
@@ -95,15 +94,12 @@
           #id {
             color: red;
           }
-
         </code></pre></div></div></section>
       <section class="main-section" id="comments">
-        <header>Comments</header><div><p>Sometimes, you will need to describe what you are doing so that others who read the code understand what a certain part is for.<br> You also might need to temporarily remove a line of code from your CSS file. <br>In both cases, consider using CSS comments! Lines that are declared as a comment are ignored by the browser and thus not displayed. Every programming language has its own way a comment is declared. </p><div class="code-box"><pre><code>
-          /* This is a 
+        <header>Comments</header><div ><p>Sometimes, you will need to describe what you are doing so that others who read the code understand what a certain part is for.<br> You also might need to temporarily remove a line of code from your CSS file. <br>In both cases, consider using CSS comments! Lines that are declared as a comment are ignored by the browser and thus not displayed. Every programming language has its own way a comment is declared. </p><div class="code-box"><pre><code>          /* This is a 
           css comment 
-          over several lines */
-        </code></pre></div></div>
+          over several lines */        </code></pre></div>
       </section>
-    </main></div>
+    </main>
   </body>
 </html>
