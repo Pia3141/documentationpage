@@ -66,10 +66,10 @@ main {
 }
 .code-box {
   border-radius: 5px;
-  width: 50%;
-  padding: 5px;
+  padding: 10px;
   background-color: #61892f;
-  margin-left: 5px;
+  display: inline-block;
+  margin-left: 20px;
 }
 
 code {

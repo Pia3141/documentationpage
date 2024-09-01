@@ -40,9 +40,10 @@
             CSS takes elements of the HTML page and assigns attributes, such as
             colors, borders and even animations. The syntax used is:
           </p>
-        <div class="code-box"><pre><code>        selector { 
-          attribute1: value1;
-          attribute2: value2;}</code></pre></div>
+        <div class="code-box"><pre>
+    <code>selector { 
+      attribute1: value1;
+      attribute2: value2;}</code></pre></div>
 
           <p>
             There can be more than one attribute assigned to an element. The
@@ -79,21 +80,21 @@
       <section class="main-section" id="selectors">
         <header>Selectors</header><div><p>In the example above you can see that tags can be used to select elements from the HTML document. These are not restricted to the visible tags of text-declarations (such as h1, p, em, ...), but also include structural tags such as main, nav, body and even the html tag itself.</p><p>What if you only want to change the style of one or several objects of a type? This is where the class and ids you assigned to elements in your HTML file come in handy. <ul><li>You can target an element with its id, by putting a # infront of it.</li><li>You can target classes by adding a . in front of their name. </li><li>To select every element on the page, you can use the * selector.</li></ul>
         <p>Example:</p><pre><div class="code-box"><code>          
-          * {
-            font-size: 20px;
-          }
+  * {
+    font-size: 20px;
+    }
 
-          h1 {
-            font-weight: 30;
-          }
+  h1 {
+    font-weight: 30;
+    }
 
-          .class {
-            background-color: blue;
-          }
+  .class {
+    background-color: blue;
+    }
 
-          #id {
-            color: red;
-          }
+  #id {
+    color: red;
+    }
         </code></pre></div></div></section>
       <section class="main-section" id="comments">
         <header>Comments</header><div ><p>Sometimes, you will need to describe what you are doing so that others who read the code understand what a certain part is for.<br> You also might need to temporarily remove a line of code from your CSS file. <br>In both cases, consider using CSS comments! Lines that are declared as a comment are ignored by the browser and thus not displayed. Every programming language has its own way a comment is declared. </p><div class="code-box"><pre><code>          /* This is a 

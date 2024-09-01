@@ -1,6 +1,5 @@
 * {
   font-family: Arial, Helvetica, sans-serif;
-  border: 1px solid black;
 }
 
 body {
@@ -8,14 +7,12 @@ body {
   background-color: #edf7ee;
   width: 100%;
   margin: 0;
-  padding:0;
+  padding: 0;
 }
-
 
 .flex {
   display: flex;
   flex-direction: row;
-  
 }
 
 main {
@@ -51,7 +48,6 @@ nav header {
   position: fixed;
   padding: 20px;
   width: 250px;
-  
 }
 
 section {
@@ -84,7 +80,8 @@ nav a {
   padding: 0;
   margin-bottom: -5px;
 }
-/*@media (max-width: 800px) {
+
+@media (max-width: 800px) {
   #navbar {
     display: none;
   }
@@ -101,5 +98,5 @@ nav a {
   }
   nav header {
     font-size: 20px;
-  }*/
+  }
 }
