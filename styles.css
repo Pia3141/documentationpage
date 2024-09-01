@@ -6,20 +6,8 @@ body {
   box-sizing: border-box;
   background-color: #edf7ee;
   width: 100%;
-  margin: 0;
-  padding: 0;
 }
 
-.flex {
-  display: flex;
-  flex-direction: row;
-}
-
-main {
-  display: block;
-  position: absolute;
-  left: 200px;
-}
 .code-box {
   background: #d6e1d7;
   border-radius: 5px;
@@ -34,8 +22,9 @@ code {
 }
 
 header {
+  font-family: lobster;
   color: #008f8c;
-  font-size: 25px;
+  font-size: 30px;
 }
 
 nav header {
@@ -46,8 +35,8 @@ nav header {
   height: 100%;
   border-right: 3px groove #015958;
   position: fixed;
-  padding: 20px;
-  width: 250px;
+  padding-right: 20px;
+  padding-top: 20px;
 }
 
 section {
@@ -80,23 +69,19 @@ nav a {
   padding: 0;
   margin-bottom: -5px;
 }
-
 @media (max-width: 800px) {
-  #navbar {
-    display: none;
-  }
-
   #main-doc {
     font-size: 10px;
+    min-width: 80vh;
   }
 
   nav {
     max-width: 20vh;
   }
   nav li {
-    font-size: 20px;
+    font-size: 15px;
   }
   nav header {
-    font-size: 20px;
+    font-size: 15px;
   }
 }
